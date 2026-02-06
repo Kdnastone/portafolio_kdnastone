@@ -1,16 +1,56 @@
-# React + Vite
+# Proenthos - Entomología Aplicada
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web corporativo para Proenthos, una consultoría científica especializada en entomología aplicada.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Website moderno y responsivo desarrollado con React y Vite que presenta los servicios de consultoría científica de Proenthos en manejo integrado de plagas, estudios de biodiversidad, evaluación ambiental y capacitación técnica.
 
-## React Compiler
+## Características
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Diseño minimalista y científico con paleta de colores naturales
+- Completamente responsivo (móvil, tablet, escritorio)
+- Navegación suave entre secciones
+- Formulario de contacto funcional
+- Contenido en español
 
-## Expanding the ESLint configuration
+## Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19.2.0
+- Vite 7.3.1
+- CSS moderno con variables personalizadas
+
+## Instalación
+
+```bash
+npm install
+```
+
+## Desarrollo
+
+```bash
+npm run dev
+```
+
+El servidor de desarrollo estará disponible en `http://localhost:5173/`
+
+## Compilación
+
+```bash
+npm run build
+```
+
+Los archivos compilados se generarán en el directorio `dist/`
+
+## Vista Previa de Producción
+
+```bash
+npm run preview
+```
+
+## Linting
+
+```bash
+npm run lint
+```
+
