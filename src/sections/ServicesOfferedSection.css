@@ -1,6 +1,7 @@
 .services-section-wrapper {
   padding: 5rem 2rem;
   background-color: var(--crema-natural);
+  scroll-margin-top: 80px;
 }
 
 .services-content-container {

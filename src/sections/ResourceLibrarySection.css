@@ -1,6 +1,7 @@
 .resources-section-container {
   padding: 5rem 2rem;
   background-color: var(--beige-arena);
+  scroll-margin-top: 80px;
 }
 
 .resources-inner-wrapper {
