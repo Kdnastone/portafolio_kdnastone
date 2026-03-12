@@ -1,8 +1,11 @@
-.proenthos-main-container {
-  width: 100%;
+.app-shell {
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-.website-content-wrapper {
-  width: 100%;
+.app-shell__content {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 0;
 }

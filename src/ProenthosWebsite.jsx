@@ -1,37 +1,37 @@
-import { useState } from 'react'
-import TopNavigationBar from './sections/TopNavigationBar'
-import PrimaryHeroSection from './sections/PrimaryHeroSection'
-import ServicesOfferedSection from './sections/ServicesOfferedSection'
-import ResourceLibrarySection from './sections/ResourceLibrarySection'
-import CompanyInfoSection from './sections/CompanyInfoSection'
-import ContactFormSection from './sections/ContactFormSection'
+import { useEffect } from 'react'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import ServicesPage from './pages/ServicesPage'
+import ResourcesPage from './pages/ResourcesPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 import './ProenthosWebsite.css'
 
 function ProenthosWebsite() {
-  const [activeSectionId, setActiveSectionId] = useState('inicio')
+  const { pathname } = useLocation()
 
-  const handleNavigationClick = (sectionIdentifier) => {
-    setActiveSectionId(sectionIdentifier)
-    const targetElement = document.getElementById(sectionIdentifier)
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
-  }
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [pathname])
 
   return (
-    <div className="proenthos-main-container">
-      <TopNavigationBar 
-        currentActiveSection={activeSectionId}
-        onNavigate={handleNavigationClick}
-      />
-      
-      <main className="website-content-wrapper">
-        <PrimaryHeroSection sectionId="inicio" />
-        <ServicesOfferedSection sectionId="servicios" />
-        <ResourceLibrarySection sectionId="recursos" />
-        <CompanyInfoSection sectionId="nosotros" />
-        <ContactFormSection sectionId="contacto" />
+    <div className="app-shell">
+      <Navbar />
+
+      <main className="app-shell__content">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/servicios" element={<ServicesPage />} />
+          <Route path="/recursos" element={<ResourcesPage />} />
+          <Route path="/nosotros" element={<AboutPage />} />
+          <Route path="/contacto" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
+
+      <Footer />
     </div>
   )
 }

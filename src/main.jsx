@@ -1,10 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
 import './globalStyles.css'
 import ProenthosWebsite from './ProenthosWebsite.jsx'
+import { store } from './store'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ProenthosWebsite />
+    <Provider store={store}>
+      <BrowserRouter>
+        <ProenthosWebsite />
+      </BrowserRouter>
+    </Provider>
   </StrictMode>,
 )
