@@ -65,11 +65,31 @@
 
 @media (max-width: 640px) {
   .site-footer__inner {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+  }
+
+  .site-footer__logo-wrap {
+    width: 32px;
+    height: 32px;
+  }
+
+  .site-footer__logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .site-footer__title {
+    font-size: 0.75rem;
+  }
+
+  .site-footer__text,
+  .site-footer__copy {
+    font-size: 0.7rem;
   }
 
   .site-footer__contact-block {
-    align-items: flex-start;
+    align-items: flex-end;
   }
 }
