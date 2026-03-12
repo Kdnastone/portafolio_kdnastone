@@ -10,9 +10,6 @@ function Footer() {
           </div>
           <div>
             <h2 className="site-footer__title">PROENTHOS</h2>
-            <p className="site-footer__text">
-              Consultoría en entomología aplicada con enfoque técnico y sostenible.
-            </p>
           </div>
         </div>
 
