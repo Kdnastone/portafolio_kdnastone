@@ -2,13 +2,12 @@
   background: linear-gradient(180deg, rgba(240, 247, 233, 0.92), rgba(233, 243, 225, 0.9));
   border-top: 1px solid rgba(13, 107, 40, 0.18);
   color: var(--color-text);
-  margin-top: 3rem;
 }
 
 .site-footer__inner {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 0.65rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -19,9 +19,12 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  overflow: hidden;
   font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--color-text);
@@ -45,5 +48,5 @@ textarea {
 
 #root {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 }
