@@ -1,3 +1,4 @@
+import logo from '../assets/02_logo_opcion.png'
 import './Footer.css'
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
       <div className="site-footer__inner">
         <div className="site-footer__brand-block">
           <div className="site-footer__logo-wrap">
-            <img src="/02_logo_opcion.png" alt="Logo Proenthos" className="site-footer__logo" />
+            <img src={logo} alt="Logo Proenthos" className="site-footer__logo" />
           </div>
           <div>
             <h2 className="site-footer__title">PROENTHOS</h2>

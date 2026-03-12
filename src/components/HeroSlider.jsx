@@ -3,6 +3,7 @@ import './HeroSlider.css'
 
 function HeroSlider({ slides = [] }) {
   const [activeIndex, setActiveIndex] = useState(0)
+  const [failedSlideIds, setFailedSlideIds] = useState(() => new Set())
 
   useEffect(() => {
     if (slides.length <= 1) {
@@ -24,6 +25,18 @@ function HeroSlider({ slides = [] }) {
     setActiveIndex((currentIndex) => (currentIndex + 1) % slides.length)
   }
 
+  const handleImageError = (slideId) => {
+    setFailedSlideIds((currentSet) => {
+      if (currentSet.has(slideId)) {
+        return currentSet
+      }
+
+      const nextSet = new Set(currentSet)
+      nextSet.add(slideId)
+      return nextSet
+    })
+  }
+
   if (!slides.length) {
     return null
   }
@@ -34,10 +47,22 @@ function HeroSlider({ slides = [] }) {
         {slides.map((slide, index) => (
           <article
             key={slide.id}
-            className={`hero-slider__slide${index === activeIndex ? ' is-active' : ''}`}
-            style={{ backgroundImage: `url(${slide.image})` }}
+            className={`hero-slider__slide${index === activeIndex ? ' is-active' : ''}${failedSlideIds.has(slide.id) ? ' has-fallback' : ''}`}
             aria-hidden={index !== activeIndex}
-          />
+          >
+            {failedSlideIds.has(slide.id) ? (
+              <div className="hero-slider__fallback" role="img" aria-label="Imagen no disponible temporalmente">
+                Imagen no disponible
+              </div>
+            ) : (
+              <img
+                src={slide.image}
+                alt={slide.title || 'Imagen destacada'}
+                className="hero-slider__image"
+                onError={() => handleImageError(slide.id)}
+              />
+            )}
+          </article>
         ))}
 
         {slides.length > 1 ? (

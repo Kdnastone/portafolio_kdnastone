@@ -13,6 +13,8 @@
 .home-hero-copy {
   display: grid;
   align-content: center;
+  justify-items: center;
+  text-align: center;
   gap: 1rem;
   padding: clamp(1.25rem, 3vw, 2rem);
   border-radius: 30px;

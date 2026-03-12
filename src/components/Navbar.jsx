@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { navigationItems } from '../data/siteContent'
 import { closeMobileMenu, toggleMobileMenu } from '../store/uiSlice'
+import logo from '../assets/02_logo_opcion.png'
 import './Navbar.css'
 
 function Navbar() {
@@ -16,7 +17,7 @@ function Navbar() {
     <header className="site-navbar">
       <div className="site-navbar__inner">
         <NavLink to="/" className="site-navbar__brand" onClick={handleLinkClick}>
-          <img src="/02_logo_opcion.png" alt="Logo Proenthos" className="site-navbar__logo" />
+          <img src={logo} alt="Logo Proenthos" className="site-navbar__logo" />
           <div>
             <span className="site-navbar__title">PROENTHOS</span>
             <span className="site-navbar__subtitle">Entomología aplicada</span>

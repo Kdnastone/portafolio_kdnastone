@@ -1,3 +1,7 @@
+import hero1 from '../assets/home-hero-1.svg?url'
+import hero2 from '../assets/home-hero-2.svg?url'
+import hero3 from '../assets/home-hero-3.svg?url'
+
 export const navigationItems = [
   { path: '/', label: 'Home' },
   { path: '/servicios', label: 'Servicios' },
@@ -13,7 +17,7 @@ export const homeHeroSlides = [
     title: 'Soluciones con respaldo técnico para agricultura y ambiente',
     description:
       'Un banner principal para comunicar valor desde el primer vistazo, con imagen completa y texto superpuesto de forma más visual y contemporánea.',
-    image: '/home-hero-1.svg',
+    image: hero1,
     primaryLabel: 'Explorar servicios',
     primaryLink: '/servicios',
     secondaryLabel: 'Conocer Proenthos',
@@ -25,7 +29,7 @@ export const homeHeroSlides = [
     title: 'Estrategias sostenibles para decisiones mejor fundamentadas',
     description:
       'El slider permite destacar líneas de trabajo, campañas, imágenes nuevas o mensajes institucionales sin depender de un bloque verde estático.',
-    image: '/home-hero-2.svg',
+    image: hero2,
     primaryLabel: 'Ver recursos',
     primaryLink: '/recursos',
     secondaryLabel: 'Solicitar contacto',
@@ -37,7 +41,7 @@ export const homeHeroSlides = [
     title: 'Identidad visual más cercana a una portada de marca profesional',
     description:
       'Cada slide usa la imagen como protagonista, mientras el texto permanece montado encima con llamadas a la acción claras y editables.',
-    image: '/home-hero-3.svg',
+    image: hero3,
     primaryLabel: 'Ir al home técnico',
     primaryLink: '/nosotros',
     secondaryLabel: 'Escribir ahora',
