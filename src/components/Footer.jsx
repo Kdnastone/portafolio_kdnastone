@@ -1,4 +1,4 @@
-import logo from '../assets/02_logo_opcion.png'
+import logo from '../assets/03_logo_opcion.png'
 import './Footer.css'
 
 function Footer() {

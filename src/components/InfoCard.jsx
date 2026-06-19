@@ -1,8 +1,10 @@
 import './InfoCard.css'
 
-function InfoCard({ title, description, points, meta }) {
+function InfoCard({ title, description, points, meta, backgroundImage }) {
+  const cardStyle = backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : {}
+  
   return (
-    <article className="info-card">
+    <article className="info-card" style={cardStyle}>
       <div className="info-card__accent" aria-hidden="true" />
       <h2 className="info-card__title">{title}</h2>
       <p className="info-card__description">{description}</p>

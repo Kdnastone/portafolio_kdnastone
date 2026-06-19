@@ -12,7 +12,7 @@ function HeroSlider({ slides = [] }) {
 
     const intervalId = window.setInterval(() => {
       setActiveIndex((currentIndex) => (currentIndex + 1) % slides.length)
-    }, 5500)
+    }, 7500)
 
     return () => window.clearInterval(intervalId)
   }, [slides.length])
@@ -55,12 +55,34 @@ function HeroSlider({ slides = [] }) {
                 Imagen no disponible
               </div>
             ) : (
-              <img
-                src={slide.image}
-                alt={slide.title || 'Imagen destacada'}
-                className="hero-slider__image"
-                onError={() => handleImageError(slide.id)}
-              />
+              <>
+                <img
+                  src={slide.image}
+                  alt={slide.title || 'Imagen destacada'}
+                  className="hero-slider__image"
+                  onError={() => handleImageError(slide.id)}
+                />
+                <div className="hero-slider__overlay" />
+                <div className="hero-slider__content">
+                  {slide.eyebrow && <span className="hero-slider__eyebrow">{slide.eyebrow}</span>}
+                  {slide.title && <h2 className="hero-slider__title">{slide.title}</h2>}
+                  {slide.description && <p className="hero-slider__description">{slide.description}</p>}
+                  {(slide.primaryLabel || slide.secondaryLabel) && (
+                    <div className="hero-slider__actions">
+                      {slide.primaryLabel && (
+                        <a href={slide.primaryLink} className="hero-slider__button hero-slider__button--primary">
+                          {slide.primaryLabel}
+                        </a>
+                      )}
+                      {slide.secondaryLabel && (
+                        <a href={slide.secondaryLink} className="hero-slider__button hero-slider__button--secondary">
+                          {slide.secondaryLabel}
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </>
             )}
           </article>
         ))}

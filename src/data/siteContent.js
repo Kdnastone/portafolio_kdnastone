@@ -56,6 +56,7 @@ export const homeCards = [
     description:
       'Convertimos observación, evidencia y análisis entomológico en acciones concretas para cada proyecto.',
     meta: 'Metodología clara y aplicable.',
+    backgroundImage: hero1,
   },
   {
     id: 'sostenibilidad',
@@ -63,6 +64,7 @@ export const homeCards = [
     description:
       'Priorizamos estrategias responsables con el entorno para equilibrar productividad, control y conservación.',
     meta: 'Visión técnica con impacto real.',
+    backgroundImage: hero2,
   },
   {
     id: 'acompanamiento',
@@ -70,6 +72,7 @@ export const homeCards = [
     description:
       'La página inicial comunica confianza y guía al visitante hacia los servicios o el formulario de contacto.',
     meta: 'Experiencia simple y directa.',
+    backgroundImage: hero3,
   },
 ]
 
@@ -167,7 +170,7 @@ export const contactCards = [
   {
     id: 'respuesta',
     title: 'Tiempo de respuesta',
-    description: 'Atención prioritaria en horario laboral y seguimiento personalizado.',
+    description: 'Te atenderemos lo más pronto posible.',
   },
   {
     id: 'alcance',

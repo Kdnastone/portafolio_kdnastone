@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { navigationItems } from '../data/siteContent'
 import { closeMobileMenu, toggleMobileMenu } from '../store/uiSlice'
-import logo from '../assets/02_logo_opcion.png'
+import logo from '../assets/03_logo_opcion.png'
 import './Navbar.css'
 
 function Navbar() {
