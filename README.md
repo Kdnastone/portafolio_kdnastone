@@ -20,37 +20,5 @@ Website moderno y responsivo desarrollado con React y Vite que presenta los serv
 - Vite 7.3.1
 - CSS moderno con variables personalizadas
 
-## Instalación
-
-```bash
-npm install
-```
-
-## Desarrollo
-
-```bash
-npm run dev
-```
-
-El servidor de desarrollo estará disponible en `http://localhost:5173/`
-
-## Compilación
-
-```bash
-npm run build
-```
-
-Los archivos compilados se generarán en el directorio `dist/`
-
-## Vista Previa de Producción
-
-```bash
-npm run preview
-```
-
-## Linting
-
-```bash
-npm run lint
-```
-
+## 🚀 Enlaces clave
+- [🌐 Aplicación web desplegada en Netlify](https://proenthos.netlify.app/)  
