@@ -1,187 +1,86 @@
-import hero1 from '../assets/home-hero-1.svg?url'
-import hero2 from '../assets/home-hero-2.svg?url'
-import hero3 from '../assets/home-hero-3.svg?url'
+import profileImage from '../assets/profile1.jpg'
 
 export const navigationItems = [
-  { path: '/', label: 'Home' },
-  { path: '/servicios', label: 'Servicios' },
-  { path: '/recursos', label: 'Recursos' },
-  { path: '/nosotros', label: 'Nosotros' },
-  { path: '/contacto', label: 'Contacto' },
+  { href: '#inicio', label: 'Inicio' },
+  { href: '#proyectos', label: 'Proyectos' },
+  /*{ href: '#tecnologias', label: 'Tecnologías' },*/
+  { href: '#contacto', label: 'Contacto' },
 ]
 
-export const homeHeroSlides = [
-  {
-    id: 'hero-1',
-    eyebrow: 'Entomología aplicada',
-    title: 'Soluciones con respaldo técnico para agricultura y ambiente',
-    description:
-      'Un banner principal para comunicar valor desde el primer vistazo, con imagen completa y texto superpuesto de forma más visual y contemporánea.',
-    image: hero1,
-    primaryLabel: 'Explorar servicios',
-    primaryLink: '/servicios',
-    secondaryLabel: 'Conocer Proenthos',
-    secondaryLink: '/nosotros',
-  },
-  {
-    id: 'hero-2',
-    eyebrow: 'Monitoreo y control',
-    title: 'Estrategias sostenibles para decisiones mejor fundamentadas',
-    description:
-      'El slider permite destacar líneas de trabajo, campañas, imágenes nuevas o mensajes institucionales sin depender de un bloque verde estático.',
-    image: hero2,
-    primaryLabel: 'Ver recursos',
-    primaryLink: '/recursos',
-    secondaryLabel: 'Solicitar contacto',
-    secondaryLink: '/contacto',
-  },
-  {
-    id: 'hero-3',
-    eyebrow: 'Investigación y acompañamiento',
-    title: 'Identidad visual más cercana a una portada de marca profesional',
-    description:
-      'Cada slide usa la imagen como protagonista, mientras el texto permanece montado encima con llamadas a la acción claras y editables.',
-    image: hero3,
-    primaryLabel: 'Ir al home técnico',
-    primaryLink: '/nosotros',
-    secondaryLabel: 'Escribir ahora',
-    secondaryLink: '/contacto',
-  },
-]
-
-export const homeCards = [
-  {
-    id: 'enfoque',
-    title: 'Enfoque científico',
-    description:
-      'Convertimos observación, evidencia y análisis entomológico en acciones concretas para cada proyecto.',
-    meta: 'Metodología clara y aplicable.',
-    backgroundImage: hero1,
-  },
-  {
-    id: 'sostenibilidad',
-    title: 'Soluciones sostenibles',
-    description:
-      'Priorizamos estrategias responsables con el entorno para equilibrar productividad, control y conservación.',
-    meta: 'Visión técnica con impacto real.',
-    backgroundImage: hero2,
-  },
-  {
-    id: 'acompanamiento',
-    title: 'Acompañamiento cercano',
-    description:
-      'La página inicial comunica confianza y guía al visitante hacia los servicios o el formulario de contacto.',
-    meta: 'Experiencia simple y directa.',
-    backgroundImage: hero3,
-  },
-]
-
-export const servicesCards = [
-  {
-    id: 'mip',
-    title: 'Manejo integrado de plagas',
-    description:
-      'Diseñamos planes técnicos para cultivos, entornos industriales y espacios de conservación con enfoque preventivo y sostenible.',
-    points: ['Diagnóstico en campo', 'Protocolos de monitoreo', 'Planes de intervención medibles'],
-  },
-  {
-    id: 'biocontrol',
-    title: 'Control biológico aplicado',
-    description:
-      'Integramos enemigos naturales, validación técnica y acompañamiento para reducir presión de plagas sin perder eficiencia.',
-    points: ['Selección de agentes biológicos', 'Seguimiento de eficacia', 'Trazabilidad de resultados'],
-  },
-  {
-    id: 'auditoria',
-    title: 'Auditoría entomológica',
-    description:
-      'Evaluamos riesgos, puntos críticos y oportunidades de mejora para operaciones agrícolas, logísticas y ambientales.',
-    points: ['Mapeo de riesgos', 'Informes ejecutivos', 'Recomendaciones accionables'],
-  },
-  {
-    id: 'capacitacion',
-    title: 'Capacitación especializada',
-    description:
-      'Formamos equipos técnicos en identificación, monitoreo y respuesta basada en evidencia para fortalecer la toma de decisiones.',
-    points: ['Talleres prácticos', 'Material de apoyo', 'Acompañamiento post capacitación'],
-  },
-]
-
-export const resourcesCards = [
-  {
-    id: 'guias',
-    title: 'Guías técnicas',
-    description: 'Documentos listos para adaptar a diferentes operaciones y ecosistemas.',
-    meta: 'Protocolos, checklists y lineamientos.',
-  },
-  {
-    id: 'biblioteca',
-    title: 'Biblioteca científica',
-    description: 'Selección de publicaciones y referencias para respaldar decisiones técnicas.',
-    meta: 'Artículos, revisiones y estudios de caso.',
-  },
-  {
-    id: 'fichas',
-    title: 'Fichas de identificación',
-    description: 'Tarjetas de apoyo visual para especies de interés, benéficas o plaga.',
-    meta: 'Uso rápido para campo y laboratorio.',
-  },
-  {
-    id: 'capacitacion',
-    title: 'Recursos formativos',
-    description: 'Material para procesos internos de formación y divulgación especializada.',
-    meta: 'Presentaciones, cápsulas y material editable.',
-  },
-]
-
-export const aboutCards = [
-  {
-    id: 'mision',
-    title: 'Nuestra misión',
-    description:
-      'Traducir conocimiento entomológico en soluciones útiles para productividad, sostenibilidad y conservación.',
-  },
-  {
-    id: 'vision',
-    title: 'Nuestra visión',
-    description:
-      'Ser un aliado técnico de referencia para proyectos que necesiten precisión científica y aplicación práctica.',
-  },
-  {
-    id: 'metodo',
-    title: 'Cómo trabajamos',
-    description:
-      'Integramos diagnóstico, análisis, diseño de acciones y seguimiento para entregar recomendaciones claras y medibles.',
-  },
-  {
-    id: 'valor',
-    title: 'Valor diferencial',
-    description:
-      'Combinamos experiencia de campo, enfoque académico y comunicación cercana para acelerar decisiones bien fundamentadas.',
-  },
-]
-
-export const contactCards = [
-  {
-    id: 'correo',
-    title: 'Correo directo',
-    description: 'proenthos@gmail.com',
-  },
-  {
-    id: 'respuesta',
-    title: 'Tiempo de respuesta',
-    description: 'Te atenderemos lo más pronto posible.',
-  },
-  {
-    id: 'alcance',
-    title: 'Cobertura',
-    description: 'Consultoría remota y acompañamiento técnico adaptable a distintos territorios.',
-  },
-]
-
-export const contactInfo = {
-  phone: '+57 300 000 0000',
-  whatsapp: 'https://wa.me/573000000000',
-  location: 'Colombia 🇨🇴',
-  hours: 'Lun - Vie: 9am - 5pm',
+export const profile = {
+  headline: 'Analista de Datos y Diseñadora de Soluciones Digitales',
+  summary:
+    'Enfocada en entomología agrícola y sistemas productivos basados en artrópodos.',
+  githubUrl: 'https://github.com/Kdnastone?tab=repositories',
+  email: 'kdnastone@gmail.com',
+  linkedinUrl: 'https://www.linkedin.com/in/sandracadena',
+  image: profileImage,
 }
+
+export const profileStats = [
+  { id: 'stack', label: 'Tecnologías principales', value: ['React+Vite', 'Pyhon','JavaScript', 'JSON', 'Netlify', 'HTML/CSS', 'Fetch API/Axios']},
+  { id: 'focus', label: 'Enfoque', value: 'Análisis, trazabilidad y entomología aplicada' },
+]
+
+export const featuredProjects = [
+  {
+    id: 'proyecto-1',
+    title: 'Insect Hub | Práctica académica',
+    description:
+      'Página web desplegada en Netlify para organizar y recopilar información técnica sobre especies de artrópodos con potencial en servicios ecosistémicos, que resultó en una plataforma clara y accesible para consulta técnica, usando principios de diseño web y estructuración de contenidos.',
+    stack: ['React+Vite', 'JavaScript', 'JSON', 'Netlify', 'HTML/CSS', 'Fetch API/Axios'],
+    repoUrl: 'https://github.com/Kdnastone/insect-hub',
+    liveUrl: 'https://insect-hub.netlify.app/',
+    status: 'Frontend',
+  },
+  {
+    id: 'proyecto-2',
+    title: 'Mortiverso',
+    description:
+      'Aplicación que consume la API de Rick and Morty para mostrar una galería de personajes en tarjetas con imagen y descripción. Además, permite añadir nuevos personajes mediante un formulario que los incorpora al inicio de la lista.',
+    stack: ['React+Vite', 'JavaScript', 'JSON', 'Netlify', 'HTML/CSS', 'Fetch API/Axios'],
+    repoUrl: 'https://github.com/Kdnastone/mortiverso',
+    liveUrl: 'https://mortiverso.netlify.app/',
+    status: 'Frontend',
+  },
+  {
+    id: 'proyecto-3',
+    title: 'Astrolunar',
+    description:
+      'Este proyecto permite a los usuarios acercarse a algunos de los registros de NASA e interactuar con su creatividad para crear nuevos planetas.',
+    stack: ['React+Vite', 'JavaScript', 'JSON', 'Netlify', 'HTML/CSS', 'Fetch API/Axios'],
+    repoUrl: 'https://github.com/Kdnastone/astrolunar',
+    liveUrl: 'https://astrolunar.netlify.app/home',
+    status: 'Frontend',
+  },
+  {
+    id: 'proyecto-4',
+    title: 'BiciStation',
+    description:
+      'Página de presentación con secciones claras, CTA definidos y diseño responsivo para validar una propuesta de valor.',
+    stack: ['React+Vite', 'JavaScript', 'JSON', 'Netlify', 'HTML/CSS', 'Fetch API/Axios'],
+    repoUrl: 'https://github.com/Kdnastone/bicistation',
+    liveUrl: 'https://bicistation.netlify.app/',
+    status: 'Frontend',
+  },
+  {
+    id: 'proyecto-5',
+    title: 'BiologicalWarriors',
+    description:
+      'Sitio dedicado a la venta de enemigos naturales para el control biológico de plagas. Ofrece especies útiles para implementar estrategias de manejo integrado de plagas en agricultura sostenible.',
+    stack: ['React+Vite', 'JavaScript', 'JSON', 'Netlify', 'HTML/CSS', 'Fetch API/Axios'],
+    repoUrl: 'https://github.com/Kdnastone/BiologicalWarriors',
+    liveUrl: 'https://biologicalwarriors.netlify.app/',
+    status: 'Frontend',
+  },
+]
+
+
+export const contactLinks = [
+  {
+    id: 'email',
+    title: 'Correo',
+    description: 'Escríbeme para colaborar en un proyecto.',
+    href: `mailto:${profile.email}`,
+  },
+]

@@ -1,8 +1,6 @@
-import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { navigationItems } from '../data/siteContent'
 import { closeMobileMenu, toggleMobileMenu } from '../store/uiSlice'
-import logo from '../assets/03_logo_opcion.png'
 import './Navbar.css'
 
 function Navbar() {
@@ -16,13 +14,13 @@ function Navbar() {
   return (
     <header className="site-navbar">
       <div className="site-navbar__inner">
-        <NavLink to="/" className="site-navbar__brand" onClick={handleLinkClick}>
-          <img src={logo} alt="Logo Proenthos" className="site-navbar__logo" />
+        <a href="#inicio" className="site-navbar__brand" onClick={handleLinkClick}>
+          <img className="site-navbar__badge" src="/portafolio.png" alt="Logo Portafolio" />
           <div>
-            <span className="site-navbar__title">PROENTHOS</span>
-            <span className="site-navbar__subtitle">Entomología aplicada</span>
+            <span className="site-navbar__title">Proyectos en GitHub</span>
+            <span className="site-navbar__subtitle">Portafolio técnico</span>
           </div>
-        </NavLink>
+        </a>
 
         <button
           type="button"
@@ -38,14 +36,14 @@ function Navbar() {
 
         <nav className={`site-navbar__links ${isMobileMenuOpen ? 'is-open' : ''}`}>
           {navigationItems.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              className={({ isActive }) => `site-navbar__link${isActive ? ' is-active' : ''}`}
+            <a
+              key={item.href}
+              href={item.href}
+              className="site-navbar__link"
               onClick={handleLinkClick}
             >
               {item.label}
-            </NavLink>
+            </a>
           ))}
         </nav>
       </div>

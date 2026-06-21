@@ -3,14 +3,14 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import './globalStyles.css'
-import ProenthosWebsite from './ProenthosWebsite.jsx'
+import PortafolioWebsite from './PortafolioWebsite.jsx'
 import { store } from './store'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <ProenthosWebsite />
+        <PortafolioWebsite />
       </BrowserRouter>
     </Provider>
   </StrictMode>,

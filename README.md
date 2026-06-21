@@ -1,24 +1,9 @@
-# Proenthos - Entomología Aplicada
+# Portafolio - Sandra Cadena
 
-Sitio web corporativo para Proenthos, una consultoría científica especializada en entomología aplicada.
+Sitio web de portafolio personal para Sandra Cadena, una bióloga especializada en entomología agrícola, análisis de datos y diseño de soluciones digitales orientadas a la investigación y la comunicación técnica.
 
 ## Descripción
 
-Website moderno y responsivo desarrollado con React y Vite que presenta los servicios de consultoría científica de Proenthos en manejo integrado de plagas, estudios de biodiversidad, evaluación ambiental y capacitación técnica.
+Este proyecto presenta una landing de portafolio construida con React y Vite. La interfaz resume el perfil profesional, muestra proyectos destacados, destaca las tecnologías principales y ofrece canales de contacto directo con GitHub y correo electrónico.
 
-## Características
 
-- Diseño minimalista y científico con paleta de colores naturales
-- Completamente responsivo (móvil, tablet, escritorio)
-- Navegación suave entre secciones
-- Formulario de contacto funcional
-- Contenido en español
-
-## Tecnologías
-
-- React 19.2.0
-- Vite 7.3.1
-- CSS moderno con variables personalizadas
-
-## 🚀 Enlaces clave
-- [🌐 Aplicación web desplegada en Netlify](https://proenthos.netlify.app/)  

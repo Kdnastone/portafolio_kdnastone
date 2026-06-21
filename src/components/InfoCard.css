@@ -5,11 +5,12 @@
   gap: 0.85rem;
   min-height: 100%;
   padding: 1.4rem;
-  border-radius: 28px;
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  border: 1px solid rgba(79, 121, 32, 0.12);
+  background-attachment: scroll;
+  background: #ffffff;
+  border: 1px solid #d0d7de;
   box-shadow: var(--shadow-soft);
   overflow: hidden;
 }
@@ -18,7 +19,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(239, 244, 229, 0.72));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.92));
   z-index: 0;
   pointer-events: none;
 }
@@ -29,15 +30,15 @@
 }
 
 .info-card__accent {
-  width: 58px;
-  height: 6px;
+  width: 44px;
+  height: 4px;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-deep));
+  background: var(--color-forest);
 }
 
 .info-card__title {
   font-size: 1.2rem;
-  color: var(--color-forest);
+  color: var(--color-text);
 }
 
 .info-card__description {
@@ -58,12 +59,53 @@
 
 .info-card__list li::before {
   content: '•';
-  color: var(--color-accent-deep);
+  color: var(--color-forest);
   font-weight: 700;
 }
 
 .info-card__meta {
   margin-top: auto;
-  color: var(--color-forest);
+  color: var(--color-text-soft);
   font-weight: 700;
+}
+
+.info-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.info-card__tag {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #f6f8fa;
+  color: var(--color-text);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.info-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.info-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.7rem;
+  padding: 0.6rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid #d0d7de;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 700;
+  background: #ffffff;
+}
+
+.info-card__button--primary {
+  color: var(--color-surface);
+  background: var(--color-forest);
+  border-color: var(--color-forest);
 }
