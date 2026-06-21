@@ -1,6 +1,6 @@
 # Portafolio - Sandra Cadena
 
-Sitio web de portafolio personal para Sandra Cadena, una bióloga especializada en entomología agrícola, análisis de datos y diseño de soluciones digitales orientadas a la investigación y la comunicación técnica.
+El [portafolio](portafoliokdnastone.netlify.app) de portafolio personal para Sandra Cadena, una bióloga especializada en entomología agrícola, análisis de datos y diseño de soluciones digitales orientadas a la investigación y la comunicación técnica.
 
 ## Descripción
 
